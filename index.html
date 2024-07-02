@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="p-4 text-[32px] grow-0">POKEMON</h1>
+            <input class="w-[500px] h-[100] border-[3px] rounded-[20px]" type="search">
+            <div class="flex items-center justify-between gap-3">
+                <button
+                    class="w-[50px] h-[50px] border -[1px] border-red-400 text-black-400 rounded-[50%] flex items-center justify-center">
+                    0
+                    <img src="./img/img/like.svg" alt="img">
+                </button>
+                <button
+                    class="w-[50px] h-[50px] border -[1px] border-red-400 text-red-400 rounded-[50%] flex items-center justify-center">
+                    0
+                    <img src="./img/img/basket.svg" alt="img">
+                </button>
+                <button
+                    class="w-[50px] h-[50px] border -[1px] border-red-400 text-red-400 rounded-[50%] flex items-center justify-center">
+                    0
+                    <img src="./img/modal.svg" alt="img">
+                </button>
+            </div>
+        </div>
+    </header>
+    <script src="./pokemon.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
